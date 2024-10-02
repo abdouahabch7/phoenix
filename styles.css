@@ -1,0 +1,239 @@
+/* General body styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Stylish button styling for all buttons */
+button, .view-project-button {
+    background: linear-gradient(135deg, #03a9f4, #0288d1);
+    color: #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover, .view-project-button:hover {
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Project item container */
+.project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Project image styling */
+.project-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Project details container */
+.project-details {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.project-details h3 {
+    margin: 0;
+}
+
+.project-details p {
+    margin: 5px 0 10px;
+    color: #bbbbbb;
+}
+
+/* Back button */
+button.back-button {
+    background: linear-gradient(135deg, #ff0266, #d500f9);
+}
+
+button.back-button:hover {
+    background: linear-gradient(135deg, #ff4081, #e040fb);
+    transform: scale(1.05);
+}
+/* General body styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Video grid layout */
+#video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.video-item {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 320px;
+    text-align: center;
+}
+
+.video-item img {
+    width: 100%;
+    border-bottom: 3px solid #03a9f4;
+}
+
+.video-item h3 {
+    padding: 10px;
+    color: #ffffff;/* General body styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Links container for YouTube and Modrinth - side-by-side */
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.link-item {
+    text-align: center;
+}
+
+.channel-logo {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.channel-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Button container for sync buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Stylish button styling for all buttons */
+button {
+    background: linear-gradient(135deg, #03a9f4, #0288d1);
+    color: #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+}
+
+
+/* Stylish button styling for all buttons */
+button, .view-project-button {
+    background: linear-gradient(135deg, #03a9f4, #0288d1);
+    color: #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover, .view-project-button:hover {
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Back button */
+button.back-button {
+    background: linear-gradient(135deg, #ff0266, #d500f9);
+}
+
+button.back-button:hover {
+    background: linear-gradient(135deg, #ff4081, #e040fb);
+    transform: scale(1.05);
+}
