@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Abdou's Channel</h1>
+        <div class="links-container">
+            <div class="link-item">
+                <h2>My YouTube Channel</h2>
+                <a href="https://www.youtube.com/@risingfromashesphoenix" target="_blank">
+                    <img src="yt-logo.png" alt="YouTube Channel" class="channel-logo">
+                </a>
+            </div>
+            <div class="link-item">
+                <h2>My Modrinth Profile</h2>
+                <a href="https://modrinth.com/user/abdouahabch7" target="_blank">
+                    <img src="modrinth-logo.png" alt="Modrinth Profile" class="channel-logo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar arrow -->
+    <div class="sidebar-arrow" id="sidebarArrow">&#9660;</div>
+
+    <!-- Sidebar -->
+    <div class="bottom-sidebar" id="sidebar">
+        <div class="sync-container">
+            <h2>Sync Options</h2>
+            <a id="yt-sync-btn" class="sync-button" href="yt-sync.html">Sync YouTube</a>
+            <a id="modrinth-sync-btn" class="sync-button" href="modrinth-sync.html">Sync Modrinth</a>
+        </div>
+        <div class="activity-container">
+            <div id="yt-recent" class="recent-activity">
+                <h3>Latest YouTube Video</h3>
+                <p id="yt-video-title">Loading...</p>
+                <a id="yt-video-link" href="#" target="_blank">Watch Now</a>
+            </div>
+            <div id="modrinth-recent" class="recent-activity">
+                <h3>Latest Modrinth Project</h3>
+                <p id="modrinth-project-title">Loading...</p>
+                <a id="modrinth-project-link" href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fetch YouTube videos and Modrinth projects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fetch latest YouTube video
+            fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyB7oJ0rPJc1n1ZAR5-IR7HKDvv5Sa8eIlA&channelId=UCsiPEepy5dzC4o3nxCDiQ-w&order=date&part=snippet&type=video&maxResults=1')
+                .then(response => response.json())
+                .then(data => {
+                    const video = data.items[0];
+                    const videoId = video.id.videoId;
+                    const videoTitle = video.snippet.title;
+                    const videoLink = `https://www.youtube.com/watch?v=${videoId}`;
+
+                    document.getElementById('yt-video-title').innerText = videoTitle;
+                    document.getElementById('yt-video-link').href = videoLink;
+                });
+
+            // Fetch latest Modrinth project
+            fetch('https://api.modrinth.com/v1/user/abdouahabch7/projects')
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.projects && data.projects.length > 0) {
+                        const project = data.projects[0];
+                        const projectTitle = project.title;
+                        const projectLink = project.url;
+
+                        document.getElementById('modrinth-project-title').innerText = projectTitle;
+                        document.getElementById('modrinth-project-link').href = projectLink;
+                    } else {
+                        document.getElementById('modrinth-project-title').innerText = "No projects found.";
+                        document.getElementById('modrinth-project-link').style.display = 'none';
+                    }
+                })
+                .catch(err => {
+                    console.error('Error fetching Modrinth projects:', err);
+                    document.getElementById('modrinth-project-title').innerText = "Error loading projects.";
+                });
+        });
+    </script>
+	<div class="staff-applications">
+    <div class="staff-image-container">
+        <a href="staff-applications.html">
+            <img src="https://www.shutterstock.com/image-vector/application-form-on-paper-sheet-600nw-1594801195.jpg" alt="Staff Applications" class="staff-image">
+        </a>
+    </div>
+    <div class="staff-description">
+        <h2>Staff Applications</h2>
+        <p>You can apply to be a staff member of my Discord and livestream chat here, click at the image to proceed.</p>
+    </div>
+</div>
+
+</body>
+</html>
