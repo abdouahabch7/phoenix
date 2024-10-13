@@ -1,0 +1,89 @@
+<style>
+    /* General body styling */
+    body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Form container styling */
+    .application-form {
+        background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        max-width: 600px;
+        margin: auto;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgIdOBpLiB0vjFMQgktShQQEpRCoWvdMTGg&s'); /* Replace with your image URL */
+        background-size: cover; /* Cover the entire form */
+        background-position: center; /* Center the image */
+    }
+
+    .application-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .application-form input, .application-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 4px;
+        background-color: #282828;
+        color: #ffffff;
+    }
+
+    .application-form button {
+        background: linear-gradient(135deg, #03a9f4, #0288d1);
+        color: #ffffff;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .application-form button:hover {
+        background: linear-gradient(135deg, #64b5f6, #42a5f5);
+        transform: scale(1.05);
+    }
+
+    .go-back-button {
+        background: linear-gradient(135deg, #ff0266, #d500f9);
+        margin-top: 10px;
+    }
+
+    .go-back-button:hover {
+        background: linear-gradient(135deg, #ff4081, #e040fb);
+        transform: scale(1.05);
+    }
+</style>
+
+<form class="application-form" action="https://formspree.io/f/mrbznneq" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required>
+
+    <label for="discordID">Discord ID:</label>
+    <input type="text" name="discordID" required>
+
+    <label for="age">Age:</label>
+    <input type="number" name="age" required>
+
+    <label for="availability">Availability:</label>
+    <textarea name="availability" required></textarea>
+
+    <label for="experience">Experience:</label>
+    <textarea name="experience" required></textarea>
+
+    <label for="application">Application:</label>
+    <textarea name="application" required></textarea>
+
+    <button type="submit">Submit Application</button>
+    <button type="button" class="go-back-button" onclick="window.history.back()">Go Back</button>
+</form>

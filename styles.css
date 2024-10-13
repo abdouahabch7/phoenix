@@ -1,0 +1,504 @@
+/* General body styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Stylish button styling for all buttons */
+button, .view-project-button {
+    background: linear-gradient(135deg, #03a9f4, #0288d1);
+    color: #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover, .view-project-button:hover {
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Project item container */
+.project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Project image styling */
+.project-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Project details container */
+.project-details {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.project-details h3 {
+    margin: 0;
+}
+
+.project-details p {
+    margin: 5px 0 10px;
+    color: #bbbbbb;
+}
+
+/* Back button */
+button.back-button {
+    background: linear-gradient(135deg, #ff0266, #d500f9);
+}
+
+button.back-button:hover {
+    background: linear-gradient(135deg, #ff4081, #e040fb);
+    transform: scale(1.05);
+}
+/* General body styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Video grid layout */
+#video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.video-item {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 320px;
+    text-align: center;
+}
+
+.video-item img {
+    width: 100%;
+    border-bottom: 3px solid #03a9f4;
+}
+
+.video-item h3 {
+    padding: 10px;
+    color: #ffffff;/* General body styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Links container for YouTube and Modrinth - side-by-side */
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.link-item {
+    text-align: center;
+}
+
+.channel-logo {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.channel-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Button container for sync buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Stylish button styling for all buttons */
+button {
+    background: linear-gradient(135deg, #03a9f4, #0288d1);
+    color: #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+}
+
+
+/* Stylish button styling for all buttons */
+button, .view-project-button {
+    background: linear-gradient(135deg, #03a9f4, #0288d1);
+    color: #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover, .view-project-button:hover {
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Back button */
+button.back-button {
+    background: linear-gradient(135deg, #ff0266, #d500f9);
+}
+
+button.back-button:hover {
+    background: linear-gradient(135deg, #ff4081, #e040fb);
+    transform: scale(1.05);
+}
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.link-item {
+    text-align: center;
+}
+
+.channel-logo {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.channel-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar Arrow */
+.sidebar-arrow {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+    background: #1e1e1e;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 10;
+}
+
+/* Bottom Sidebar Styling */
+.bottom-sidebar {
+    position: fixed;
+    bottom: -250px; /* Hidden by default */
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    transition: bottom 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+}
+
+/* Show sidebar on hover or click */
+.sidebar-arrow:hover + .bottom-sidebar,
+.bottom-sidebar:hover {
+    bottom: 0; /* Show on hover or click */
+}
+
+.sync-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.activity-container {
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.recent-activity {
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 6px;
+    width: 200px;
+}
+
+/* Stylish Sync Button Styles */
+.sync-button {
+    background: linear-gradient(135deg, #03a9f4, #0288d1);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sync-button:hover {
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+.links-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px;
+}
+.channel-logo {
+    width: 855px; /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Applications</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #282828;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #03a9f4, #0288d1);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #64b5f6, #42a5f5);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Staff Applications</h2>
+        <form action="/submit-application" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="discordID" placeholder="Discord ID" required>
+            <textarea name="application" placeholder="Why do you want to be staff?" rows="5" required></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+/* Authentication Buttons */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.auth-buttons .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.auth-buttons .button:hover {
+    background-color: #45a049;
+}
+
+/* Form Container */
+.form-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form-container input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.form-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.form-container p {
+    margin-top: 15px;
+}
+
+</body>
+</html>
