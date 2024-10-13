@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoenix's Garage</title>
+    <title>Home - Abdou's Channel</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
+    <!-- Main Content -->
     <div class="container">
-        <h1>Phoenix's Garage</h1>
         <div class="links-container">
             <div class="link-item">
                 <h2>My YouTube Channel</h2>
@@ -26,16 +25,18 @@
         </div>
     </div>
 
-    <!-- Sidebar arrow -->
+    <!-- Sidebar Arrow -->
     <div class="sidebar-arrow" id="sidebarArrow">&#9660;</div>
 
     <!-- Sidebar -->
     <div class="bottom-sidebar" id="sidebar">
+        <!-- Sync Options -->
         <div class="sync-container">
             <h2>Sync Options</h2>
             <a id="yt-sync-btn" class="sync-button" href="yt-sync.html">Sync YouTube</a>
             <a id="modrinth-sync-btn" class="sync-button" href="modrinth-sync.html">Sync Modrinth</a>
         </div>
+        <!-- Recent Activity -->
         <div class="activity-container">
             <div id="yt-recent" class="recent-activity">
                 <h3>Latest YouTube Video</h3>
@@ -50,6 +51,20 @@
         </div>
     </div>
 
+    <!-- Staff Applications -->
+    <div class="staff-applications">
+        <div class="staff-image-container">
+            <a href="staff-applications.html">
+                <img src="https://www.shutterstock.com/image-vector/application-form-on-paper-sheet-600nw-1594801195.jpg" alt="Staff Applications" class="staff-image">
+            </a>
+        </div>
+        <div class="staff-description">
+            <h2>Staff Applications</h2>
+            <p>You can apply to be a staff member of my Discord and livestream chat here. Click on the image to proceed.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
     <script>
         // Fetch YouTube videos and Modrinth projects
         document.addEventListener('DOMContentLoaded', function() {
@@ -71,7 +86,7 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data && data.projects && data.projects.length > 0) {
-                        const project = data.projects[1];
+                        const project = data.projects[0];
                         const projectTitle = project.title;
                         const projectLink = project.url;
 
